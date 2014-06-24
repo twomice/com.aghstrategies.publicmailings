@@ -1,6 +1,6 @@
 com.aghstrategies.publicmailings
 ================================
-This creates archive list of public mailings in CiviCRM. You will need to enable the "CiviMail: view public mail" permission. This only pulls completed mailings that have the "Public Pages" set for the visibility.
+This extension creates archive list of public mailings in CiviCRM. You will need to enable the "CiviMail: view public mail" permission. This only pulls completed mailings that have the "Public Pages" set for the visibility.
 
 Modifiers*
 You can pass modifiers through the url to filter the list of mailings. These can also be used in combination with one another. ---Template Id--- If you want only public mailings that use a specific mailing template: "civicrm/public_mailings_list&reset=1&tid=22"
