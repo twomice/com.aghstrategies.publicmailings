@@ -6,8 +6,8 @@ class CRM_Publicmailings_Page_PublicMailingsList extends CRM_Core_Page {
     function getDate(){
     $year  = CRM_Utils_Request::retrieve('year', 'Positive', $this, FALSE);
     $month = CRM_Utils_Request::retrieve('month', 'Positive', $this, FALSE);
-    $date1 = $_GET['date1'];
-    $date2 = $_GET['date2'];
+    $date1 = CRM_Utils_Array::value('date1', $_GET, '0');;
+    $date2 = CRM_Utils_Array::value('date2', $_GET, '0');;
     if($year> 0 && $month<1){
       $yearstring = $year . "-1-1";
       $this->_date1 = date("YmdHis", strtotime($yearstring) );
@@ -46,10 +46,10 @@ class CRM_Publicmailings_Page_PublicMailingsList extends CRM_Core_Page {
     if($tid>0){
       $params['msg_template_id'] = $tid;
     }
-    if($this->_date1>0){
+    if(isset($this->_date1)){
       $params['filter.scheduled_date_low'] = $this->_date1;
     }
-    if($this->_date2>0){
+    if(isset($this->_date2)){
       $params['filter.scheduled_date_high'] = $this->_date2;
     }
     $count = civicrm_api('Mailing', 'getcount', $params);
@@ -80,10 +80,10 @@ class CRM_Publicmailings_Page_PublicMailingsList extends CRM_Core_Page {
     if($tid>0){
      $params['msg_template_id'] = $tid;
     }
-    if($this->_date1>0){
+    if(isset($this->_date1)){
      $params['filter.scheduled_date_low'] = $this->_date1;
     }
-    if($this->_date2>0){
+    if(isset($this->_date2)){
      $params['filter.scheduled_date_high'] = $this->_date2;
     }
     $result = civicrm_api('Mailing', 'get', $params);
