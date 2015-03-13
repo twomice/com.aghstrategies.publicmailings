@@ -11,6 +11,7 @@
   <releaseDate>2014-06-18</releaseDate>
   <version>1.0</version>
   <develStage>stable</develStage>
+  <documentation>https://civicrm.org/extensions/public-mailings-archive-3</documentation>
   <compatibility>
     <ver>4.2</ver>
     <ver>4.3</ver>
