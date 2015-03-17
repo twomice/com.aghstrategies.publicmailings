@@ -11,7 +11,8 @@
   <releaseDate>2014-06-18</releaseDate>
   <version>1.0</version>
   <develStage>stable</develStage>
-  <documentation>https://civicrm.org/extensions/public-mailings-archive-3</documentation>
+  <url desc="Main Extension Page">https://civicrm.org/extensions/public-mailings-archive-3</url>
+  <url desc="Documentation">https://civicrm.org/extensions/public-mailings-archive-3</url>
   <compatibility>
     <ver>4.2</ver>
     <ver>4.3</ver>
