@@ -12,12 +12,15 @@
   <version>1.0</version>
   <develStage>stable</develStage>
   <url desc="Main Extension Page">https://civicrm.org/extensions/public-mailings-archive-3</url>
-  <url desc="Documentation">https://civicrm.org/extensions/public-mailings-archive-3</url>
+  <url desc="Documentation">https://github.com/aghstrategies/com.aghstrategies.publicmailings</url>
+  <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   <compatibility>
     <ver>4.2</ver>
     <ver>4.3</ver>
     <ver>4.4</ver>
     <ver>4.5</ver>
+    <ver>4.6</ver>
+    <ver>4.7</ver>
   </compatibility>
   <comments>This module displays all of the public mailings that have been sent out through civimail. The url to get to the list page is .../civicrm/public_mailings_list</comments>
   <civix>
