@@ -4,12 +4,12 @@
     <path>civicrm/public_mailings_list</path>
     <page_callback>CRM_Publicmailings_Page_PublicMailingsList</page_callback>
     <title>PublicMailingsList</title>
-    <access_arguments>access CiviCRM</access_arguments>
+    <access_arguments>view public CiviMail content</access_arguments>
   </item>
   <item>
     <path>civicrm/public_mailing_view</path>
     <page_callback>CRM_Publicmailings_Page_PublicMailingsView</page_callback>
     <title>PublicMailingsView</title>
-    <access_arguments>access CiviCRM</access_arguments>
+    <access_arguments>view public CiviMail content</access_arguments>
   </item>
 </menu>
